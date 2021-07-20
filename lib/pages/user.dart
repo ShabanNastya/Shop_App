@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:shop_app/provider/dark_theme_provider.dart';
 
 class UserPage extends StatefulWidget {
   @override
@@ -6,8 +8,6 @@ class UserPage extends StatefulWidget {
 }
 
 class _UserPageState extends State<UserPage> {
-  bool _value = false;
-
   Widget userListTile(
       String title, String subtitle, int index, BuildContext context) {
     return Material(
@@ -41,6 +41,7 @@ class _UserPageState extends State<UserPage> {
 
   @override
   Widget build(BuildContext context) {
+    final themeChange = Provider.of<DarkThemeProvider>(context);
     return Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -71,10 +72,10 @@ class _UserPageState extends State<UserPage> {
             color: Colors.purple,
           ),
           SwitchListTile(
-            value: _value,
+            value: themeChange.darkTheme,
             onChanged: (value){
               setState(() {
-                _value = value;
+                themeChange.darkTheme = value;
               });
             },
             secondary: const Icon(Icons.lightbulb_outline),

@@ -14,7 +14,7 @@ class BottomBarPage extends StatefulWidget {
 
 class _BottomBarPageState extends State<BottomBarPage> {
   List<Map<String, Object>> _pages;
-  int _selectedIndex = 4;
+  int _selectedIndex = 1;
 
   void initState(){
     _pages = [
@@ -49,7 +49,7 @@ class _BottomBarPageState extends State<BottomBarPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(centerTitle: true, title: Text(_pages[_selectedIndex]['title']), backgroundColor: Colors.purpleAccent,),
+      //appBar: AppBar(centerTitle: true, title: Text(_pages[_selectedIndex]['title']), backgroundColor: Colors.purpleAccent,),
       body: _pages[_selectedIndex]['page'],
       bottomNavigationBar: BottomAppBar(
         shape: CircularNotchedRectangle(),

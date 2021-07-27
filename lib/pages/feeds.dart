@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:shop_app/pages/feeds_products.dart';
+import 'package:shop_app/pages/widgets/feeds_products.dart';
 
 class FeedsPage extends StatelessWidget {
   @override

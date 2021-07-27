@@ -14,7 +14,7 @@ class BottomBarPage extends StatefulWidget {
 
 class _BottomBarPageState extends State<BottomBarPage> {
   List<Map<String, Object>> _pages;
-  int _selectedIndex = 1;
+  int _selectedIndex = 0;
 
   void initState(){
     _pages = [

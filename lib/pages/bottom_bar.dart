@@ -19,7 +19,7 @@ class _BottomBarPageState extends State<BottomBarPage> {
   void initState(){
     _pages = [
       {
-        'page': HomePage(),
+        'page': Home(),
         'title': 'Home Page'
       },
       {

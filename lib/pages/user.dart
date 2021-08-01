@@ -49,6 +49,38 @@ class _UserPageState extends State<UserPage> {
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.all(8.0),
+            child: userTitle('User Bag'),
+          ),
+          const Divider(
+            thickness: 3,
+            indent: 8,
+            endIndent: 50,
+            color: Colors.purple,
+          ),
+          Material(
+            child: InkWell(
+              splashColor: Theme.of(context).splashColor,
+              child: ListTile(
+                title: Text('Wishlist'),
+                trailing: Icon(Icons.chevron_right_outlined),
+                leading: Icon(Icons.assignment_turned_in_outlined),
+                onTap: () {},
+              ),
+            ),
+          ),
+          Material(
+            child: InkWell(
+              splashColor: Theme.of(context).splashColor,
+              child: ListTile(
+                title: Text('Cart'),
+                trailing: Icon(Icons.chevron_right_outlined),
+                leading: Icon(Icons.shopping_cart),
+                onTap: () {},
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
             child: userTitle('User Information'),
           ),
           const Divider(
@@ -73,7 +105,7 @@ class _UserPageState extends State<UserPage> {
           ),
           SwitchListTile(
             value: themeChange.darkTheme,
-            onChanged: (value){
+            onChanged: (value) {
               setState(() {
                 themeChange.darkTheme = value;
               });

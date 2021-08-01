@@ -36,6 +36,8 @@ dependencies:
   carousel_pro: ^1.0.0
   flutter_swiper: ^1.1.6
 
+  list_tile_switch: ^0.0.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -71,6 +73,7 @@ flutter:
     - assets/images/CatPhones.png
     - assets/images/CatShoes.jpg
     - assets/images/CatWatches.jpg
+    - assets/images/emptywishlist.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

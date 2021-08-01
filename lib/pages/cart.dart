@@ -5,6 +5,7 @@ import 'package:shop_app/pages/widgets/cart_empty.dart';
 import 'package:shop_app/pages/widgets/cart_full.dart';
 
 class CartPage extends StatelessWidget {
+  static const routeName = '/CartPage';
   @override
   Widget build(BuildContext context) {
     List products = [];
